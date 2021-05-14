@@ -12,7 +12,7 @@ def dataframe_plot(df_,m):
 	m.plot(lon_list,lat_list,latlon=True)
 
 def map_particle_plot(dataframe):
-	m = Basemap(projection='cyl',llcrnrlat=lllat,urcrnrlat=urlat,llcrnrlon=lllon,urcrnrlon=urlon,resolution='c',lon_0=0,fix_aspect=False)
+	m = Basemap(projection='cea',llcrnrlat=lllat,urcrnrlat=urlat,llcrnrlon=lllon,urcrnrlon=urlon,resolution='c',lon_0=0,fix_aspect=False)
 	m.drawcoastlines(linewidth=1.5)
 	line_space=20
 	fontsz=10

@@ -21,9 +21,8 @@ def wrap_lon360(lon):
 
 def download_meta_file_and_compile_df():
 	url = 'http://soccom.ucsd.edu/floats/SOCCOM_float_stats.html'
-	html = requests.get(url).content  
-	df_list = pd.read_html(html)[0] 
-	wmoID_list = df_list['TrajMBARI dataWMOID'].values
+	df_list = pd.read_html(url)[1]
+	wmoID_list = df_list['MBARIODV_fileWMO'].values
 	wmoID_list = wmoID_list[wmoID_list!=-999]
 	wmoID_list = [str(dummy) for dummy in wmoID_list]
 

@@ -53,10 +53,6 @@ parser.add_argument('--years',
                         help='Number of years to plot')
 
 
-
-
-
-
 def plot_the_cruises(df_):
 	colorlist = ['red', 'blue', 'green', 'purple', 'orange', 'darkred',
                   'lightred', 'darkblue', 'darkgreen', 'cadetblue',
